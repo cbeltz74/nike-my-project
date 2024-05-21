@@ -1,7 +1,6 @@
 import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
-import { Button } from "../components/Button";
-import { LearnButton } from '../components/LearnButton'
+import Button from "../components/Button";
 
 const SpecialOffer = () => {
   return (
@@ -30,10 +29,12 @@ const SpecialOffer = () => {
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.
         </p>
-          <div className='mt-11 flex flex-wrap gap-4'>
-          <Button label="Shop now" iconURL={arrowRight}/>
-          <LearnButton label="Learn more" />
-          </div>
+
+        <div className="py-5 flex gap-5">
+          <Button label="See offer" iconURL={arrowRight}/>
+          <Button label="Learn more" backgroundColor="bg-white" textColor="text-slate-gray" borderColor="text-slate-gray" />
+        </div>
+
       </div>
     </section>
   );
