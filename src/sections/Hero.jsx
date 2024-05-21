@@ -44,8 +44,8 @@ const Hero = () => {
         />
 
           <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[7%] max-sm:px-6">
-            {shoes.map((shoe) => (
-              <div key={shoe}>
+            {shoes.map((shoe, index) => (
+              <div key={index}>
                 <ShoeCard 
                 imgURL={shoe}
                 changeBigShoeImage={(shoe) => setbigShoeImg(shoe)}
